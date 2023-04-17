@@ -1,0 +1,56 @@
+body{
+    font:14px/1.5 normal 'Montserrat', 'Noto Sans Kr', sans-serif;
+    /*글자크기/행의높이 글꼴1, 글꼴2, 글꼴3*/
+    height: 5000px;
+    background: url('../images/visual_bg.jpg') no-repeat center top / contain ; /*contain은 너비를 기준 / cover는 높이를 기준*/
+}
+
+.d-none{
+    display: none;
+}
+
+.co{
+    width: 1000px;
+    height: 515px;
+    margin: 0 auto;
+    background: url("../images/co_img.png") no-repeat 50% 16%,
+                url("../images/corightbg.jpg") no-repeat 500px 0,
+                url("../images/coleftbg.jpg") no-repeat 0 0;
+    position: relative; 
+}
+
+.coflight{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cotext{
+    position: absolute;
+    width: 40%;
+    top: 33%;
+    left: 55%;
+}
+
+.cotext p{
+    line-height: 1.6;
+}
+
+strong.point{/*종속선택자 / 띄워쓰면 후손선택자 */
+    font-size: 30px;
+    line-height: 1.8;  /*라인 - 간격 (가독성을 위해서)*/
+}
+
+.btn-down{
+    background: black;
+    color: white;
+    position: absolute;
+    left: 55%;
+    top: 80%
+}
+
+.btn-down a{
+    text-decoration: none;
+    color: inherit;
+}
