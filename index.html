@@ -37,6 +37,11 @@
             <li><a href="#">my menu</a></li>
             <li><a href="#">login</a></li>
           </ul>
+          <div class="d-none" id="burger">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+          </div>
                 </div>
               </div>
                 <div class="slogan">
@@ -120,11 +125,32 @@
                 </a>
             </div>
             <div class="info">
-                <p>주소 : 광주광역시 서구 경열로 3 전화번호 062.362.7797 이메일 help@widmice.com 사업자등록번호: 187-7</p>
+                <p>주소 : 광주광역시 서구 경열로 3 전화번호: 062.362.7797 이메일: help@widmice.com 사업자등록번호: 187-7</p>
                 <p>개인정보책임자 : 홍길동 무단이메일수집거부 | 개인정보취급방침 | 이용안내</p>
                 <p>&copy; widmice&trade; 위드마이스.</p>
             </div>
         </div>
     </footer>
+    <!-- <script>
+      const bw = screen.availWidth;
+      const bh = screen.availHeight
+      alert(`${bw} x ${bh}`)
+    </script> -->
+      <script>
+        //1. DOM Select (=선택), 변수 할당(=제어)
+        const burguer = document.querySelector("#burger");
+
+        //2. Event(클릭, 터치..) 처리
+        burger.addEventListener("click", function(){
+          //2-1 .navbar 선택하고
+          const navbar = document.querySelector(".navbar");
+          //2-2 .navbar 스타일 조작(30% -> 100%, height:auto -> 400px)
+          //consol.log(navbar); // 확인
+          //console.dir(navbar); // 객체가 갖고있는 메소드, 프로퍼티 확인
+          console.log(window.getComputedStyle(navbar));//navbar 객체에 css 스타일 정보를 get
+          
+        })
+      </script>
+
   </body>
 </html>
